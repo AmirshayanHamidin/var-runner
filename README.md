@@ -36,8 +36,8 @@ runs them. The mock backend and all loop mechanics ARE tested.
 
 ### Milestones
 
-- [x] **M1 — spec + skeleton + unit tests** (built & tested 2026-07-07, run 1;
-  publication to GitHub pending — see incident log):
+- [x] **M1 — spec + skeleton + unit tests** (LANDED 2026-07-07: built & tested
+  in run 1, published + verified 19/19 files byte-for-byte same day):
   `SPEC.md`, package modules (`agenda`, `guardrails`, `verify`, `loop`,
   `cli`, `backends/{base,anthropic,ollama,mock}`), 26 passing tests
   (`tests/`), `pyproject.toml`. All pure Python, no API calls needed.
@@ -63,6 +63,9 @@ for MockBackend; add `tests/test_e2e_dryrun.py`.
   credentials exist by design. M1 built and 26/26 tests passed locally;
   checksums recorded in RUN_REPORT_2026-07-07.md. Guardrail: verify Chrome
   connectivity at run start before building, and always record checksums.
+  RESOLVED same day: user re-opened the browser; repo created, all 19 files
+  pushed in 4 commits and verified byte-for-byte (SHA-256) via cache-busted
+  raw re-fetch. M1 is landed.
 
 ## Layout
 
